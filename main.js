@@ -131,6 +131,7 @@ function timSoNguyenTo(n) {
       return false;
     }
   }
+
   return true;
 }
 //tìm số đầu tiên trong dãy số nt
@@ -140,11 +141,13 @@ function timSoNguyenToDauTien() {
   var ketQua = "";
   console.log("🚀 - timSoNguyenToDauTien - daySoNT:", daySoNT);
   //progress
+
   for (var i = 0; i < numberArr.length; i++) {
-    if (timSoNguyenTo(numberArr[i])) {
+    if (Number.isInteger(numberArr[i]) && timSoNguyenTo(numberArr[i])) {
       daySoNT.push(numberArr[i]);
     }
   }
+
   //output
   if (daySoNT.length == 0) {
     ketQua = `Mảng này không có số nguyên tố`;
