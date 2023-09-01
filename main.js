@@ -13,7 +13,7 @@ function tinhTong() {
   var sum = 0;
   //progress
   for (var i = 0; i < numberArr.length; i++) {
-    if (numberArr[i] >= 0) {
+    if (numberArr[i] > 0) {
       sum = sum + numberArr[i];
     }
   }
