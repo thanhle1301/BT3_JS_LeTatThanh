@@ -1,5 +1,4 @@
 var numberArr = [];
-
 function themSo() {
   //input
   var number = document.querySelector("#number").value * 1;
